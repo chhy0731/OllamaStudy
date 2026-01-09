@@ -1,0 +1,41 @@
+[project]
+name = "ollama-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "DESKTOP-GD2G3ED\\Bistelligence",email = "chlim1@bistelligence.ai"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-ollama (>=1.0.1,<2.0.0)",
+    "langchain-openai (>=1.1.6,<2.0.0)",
+    "google-search-results (>=2.4.2,<3.0.0)",
+    "langchain-core (>=1.2.6,<2.0.0)",
+    "langchain (>=1.2.2,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "beautifulsoup4 (>=4.14.3,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pypdf (>=6.5.0,<7.0.0)",
+    "pillow (>=12.1.0,<13.0.0)",
+    "langchain-text-splitters (>=1.1.0,<2.0.0)",
+    "chromadb (>=1.4.0,<2.0.0)",
+    "sentence-transformers (>=5.2.0,<6.0.0)",
+    "gradio (>=6.2.0,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ollama", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0.0"
+
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
